@@ -13,26 +13,26 @@ d3.json(queryUrl, function(data) {
 });
 
 
-earthQuakeList = d3.json(queryUrl, function(data) {
-    ;
-});
+// earthQuakeList = d3.json(queryUrl, function(data) {
+//     ;
+// });
 
 
-// Define arrays to hold created earquake location markers
-var earthquakeMarkers = [];
-// Loop through earthquakes and make markers
-for (var i = 0; i < earthQuakeList.length; i++) {
-  // Set the marker radius for earthquake by passing magnitude into the markerSize function
-  earthquakeMarkers.push(
-    L.circle(earthQuakeList[i].geometry.coordinates, {
-      stroke: false,
-      fillOpacity: 0.75,
-      color: "white",
-      fillColor: "white",
-      radius: markerSize(earthQuakeList[i].properties.mag)
-    })
-  );
-}
+// // Define arrays to hold created earquake location markers
+// var earthquakeMarkers = [];
+// // Loop through earthquakes and make markers
+// for (var i = 0; i < earthQuakeList.length; i++) {
+//   // Set the marker radius for earthquake by passing magnitude into the markerSize function
+//   earthquakeMarkers.push(
+//     L.circle(earthQuakeList[i].geometry.coordinates, {
+//       stroke: false,
+//       fillOpacity: 0.75,
+//       color: "white",
+//       fillColor: "white",
+//       radius: markerSize(earthQuakeList[i].properties.mag)
+//     })
+//   );
+// }
 
 
 
